@@ -13,6 +13,7 @@ with open('Utils/synset.txt', 'r') as f:
 
 
 model_path = 'Models/model.onnx'
+model_path = 'Models/quantized_model (1).onnx'
 model = onnx.load(model_path)
 img_directory = 'SampleData/Input/'
 session = ort.InferenceSession(model.SerializeToString())
@@ -31,8 +32,6 @@ def read_image(x, image_h = 1024, image_w = 1024):
 
 
     return x
-
-    
 
 
 def predict(path):
@@ -67,13 +66,6 @@ def predict(path):
 
 
 
-
-
-
-
-
-
-
 if __name__ == "__main__":
 
 
@@ -81,5 +73,5 @@ if __name__ == "__main__":
 
     os.chdir(dirname)
 
-    sample_path = 'Sample\\Input\\*.tif'
+    sample_path = 'SampleData\\Input\\*.tif'
     predict(sample_path)
