@@ -13,7 +13,6 @@ with open('Utils/synset.txt', 'r') as f:
 
 
 model_path = 'Models/model.onnx'
-model_path = 'Models/quantized_model (1).onnx'
 model = onnx.load(model_path)
 img_directory = 'SampleData/Input/'
 session = ort.InferenceSession(model.SerializeToString())
