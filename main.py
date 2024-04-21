@@ -6,7 +6,6 @@ import os
 import glob
 from pathlib import Path
 
-import matplotlib.pyplot as plt
 
 with open('Utils/synset.txt', 'r') as f:
     labels = [l.rstrip() for l in f]
