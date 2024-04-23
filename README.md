@@ -17,10 +17,10 @@ For detailed information on how the model was trained, please refer to the `trai
 ## Directory Structure
 The project directory follows the structure below:
 - SampleData/
-  - Input/        # Contains input images
+  - Input/       
     - sample_input1.jpg
     - sample_input2.jpg
-  - Output/       # Contains output predictions
+  - Output/      
     - sample_output1.jpg
     - sample_output2.jpg
 - Models/
